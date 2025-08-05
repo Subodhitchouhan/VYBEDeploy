@@ -17,7 +17,7 @@ import Story from './pages/Story'
 import getAllStories from './hooks/getAllStories'
 import Messages from './pages/Messages'
 import MessageArea from './pages/MessageArea'
-import {io} from "socket.io-client"
+//import {io} from "socket.io-client"
 import { setOnlineUsers } from './redux/socketSlice';
 import getFollowingList from './hooks/getFollowingList'
 import getPrevChatUsers from './hooks/getPrevChatUsers'
@@ -26,7 +26,7 @@ import getAllNotifications from './hooks/getAllNotifications'
 import Notifications from './pages/Notifications'
 import { setNotificationData } from './redux/userSlice'
 import { initSocket, getSocket, closeSocket } from './redux/socketClient'; 
-export const serverUrl="https://vybedeploy.onrender.com/"
+export const serverUrl="https://vybedeploy.onrender.com"
 function App() {
    getCurrentUser()
    getSuggestedUsers()

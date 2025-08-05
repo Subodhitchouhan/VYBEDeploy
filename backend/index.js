@@ -14,7 +14,7 @@ dotenv.config()
 
 const port=process.env.PORT || 5000
 app.use(cors({
-    origin:"https://vybe-deploy.vercel.app/",
+    origin:"https://vybe-deploy.vercel.app",
     credentials:true
 }))
 app.use(express.json())
@@ -33,3 +33,7 @@ server.listen(port , ()=>{
     console.log("server started")
 })
 
+// Health check route
+app.get("/", (req, res) => {
+  res.send("API is working!");
+});
