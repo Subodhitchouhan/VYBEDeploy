@@ -26,7 +26,7 @@ import getAllNotifications from './hooks/getAllNotifications'
 import Notifications from './pages/Notifications'
 import { setNotificationData } from './redux/userSlice'
 import { initSocket, getSocket, closeSocket } from './redux/socketClient'; 
-export const serverUrl="https://vybedeploy.onrender.com"
+export const serverUrl="https://vybedeploy.onrender.com/"
 function App() {
    getCurrentUser()
    getSuggestedUsers()
