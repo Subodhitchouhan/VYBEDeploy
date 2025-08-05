@@ -8,7 +8,7 @@ const server = http.createServer(app);
 // Set up Socket.IO server
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // your frontend URL
+    origin: "https://vybe-deploy.vercel.app/", // your frontend URL
     methods: ["GET", "POST"],
   },
 });
